@@ -1,0 +1,31 @@
+legend {
+  font-size: 20px;
+}
+
+fieldset div {
+  text-align: center;
+  margin:10px;
+  height: 30px;
+}
+
+input {
+  margin: 0 15px;
+}
+
+summary {
+  text-align: center;
+  margin:10px;
+  height: 30px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.date {
+  width: 30%;
+}
+
+.height .weight .max .min {
+  width: 10%;
+}

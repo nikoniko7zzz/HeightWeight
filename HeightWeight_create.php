@@ -19,7 +19,7 @@ fwrite($file, $write_data);  // データに書き込み
 flock($file, LOCK_UN);  // ロック解除
 fclose($file);  // ファイルを閉じる
 
-header("Location:floating.php");  // 入力画面に移動
+header("Location:HeightWeight.php");  // 入力画面に移動
 
 
 ?>

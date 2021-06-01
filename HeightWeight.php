@@ -6,19 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <form action="test_create.php" method="post">
+  <form action="HeightWeight_create.php" method="post">
     <fieldset>
-      <legend>テキスト</legend>
+      <legend>キン肉スグル</legend>
       <!-- <a href="text_read.php">一覧画面</a> -->
       <div>
-        身長:<input type="text" name="height">cm
+        身長 :<input type="text" name="height">cm
       </div>
       <div>
-        体重:<input type="text" name="weight">kg
+        体重 :<input type="text" name="weight">kg
       </div>
       <div>
         <button>submit</button>
@@ -27,26 +28,30 @@
   </form>
 
   <!-- データ出力場所 一覧-->
-  <table border="1" id="targetTable">
-    <h1>テキスト</h1>
-    <thead>
-      <tr>
-        <td>日付</td>
-        <td>身長</td>
-        <td>体重</td>
-        <td>標準Max</td>
-        <td>標準Min</td>
-      </tr>
-    </thead>
-    <tbody>
-    <tbody>
-  </table>
+  <details>
+    <summary>身長体重一覧</summary>
+    <table border="1" id="targetTable">
+      <h1>テキスト</h1>
+      <thead>
+        <tr>
+          <td class="date">日付</td>
+          <td class="height">身長</td>
+          <td class="weight">体重</td>
+          <td class="max">標準Max</td>
+          <td class="min">標準Min</td>
+        </tr>
+      </thead>
+      <tbody>
+      <tbody>
+    </table>
+  </details>
 
   <!-- データ出力場所 グラフ-->
-  <h1>折れ線グラフ</h1>
-  <canvas id="myLineChart"></canvas>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-
+  <details>
+    <summary>折れ線グラフ</summary>
+    <canvas id="myLineChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  </details>
 
   <script>
     //CSVファイルを読み込む関数getCSV()の定義-------------------------
